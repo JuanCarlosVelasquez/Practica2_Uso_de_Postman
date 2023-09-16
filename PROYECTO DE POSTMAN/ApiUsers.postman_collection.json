@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "78100be8-0dd3-42e1-93a3-5cf1c019eb47",
+		"name": "ApiUsers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19550335"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjE3MTc5Mzc4NDgiLCJuYmYiOjE2OTE5NjEyMzgsImV4cCI6MTY5MjU2NjAzOCwiaWF0IjoxNjkxOTYxMjM4fQ.AJoTRAtLiX2tpB_l8XMyyEQsk8ocIZAC5CveAZlQy3c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7175/api/Users",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7175",
+					"path": [
+						"api",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjE3MTc5Mzc4NDgiLCJuYmYiOjE2OTE5NjEyMzgsImV4cCI6MTY5MjU2NjAzOCwiaWF0IjoxNjkxOTYxMjM4fQ.AJoTRAtLiX2tpB_l8XMyyEQsk8ocIZAC5CveAZlQy3c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7175/api/Users/1717937859",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7175",
+					"path": [
+						"api",
+						"Users",
+						"1717937859"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"identificationUser\": \"1717937848\",\r\n  \"nameUser\": \"Usuario1\",\r\n  \"emailUser\": \"Usuario1@gmail.com\",\r\n  \"passwordUser\": \"Usuario1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7175/api/Users/registro",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7175",
+					"path": [
+						"api",
+						"Users",
+						"registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"identificationUser\": \"1717937858\",\r\n  \"passwordUser\": \"Usuario1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7175/api/Users/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7175",
+					"path": [
+						"api",
+						"Users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
